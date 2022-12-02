@@ -1,17 +1,17 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import './App.css'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+// Views
+import HomeView from './views/HomeView';
 
 function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <div>Hello, World!</div>,
-    },
+      element: <HomeView />
+    }
   ]);
 
-  return (
-    <RouterProvider router={router} />
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
